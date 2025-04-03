@@ -1,11 +1,8 @@
 var t1 = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#main",
-    start: "50% 50%",
-    end: "100% 50%",
-    scrub: 2,
-    pin: true,
-  },
+  repeat: 0,
+  yoyo: true,
+  duration: 2,
+  ease: "power2.inOut",
 });
 
 // Define animations
