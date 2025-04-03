@@ -1,0 +1,34 @@
+.timeline {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  background: rgba(34, 40, 49, 0.9); /* Dark background */
+  padding: 30px;
+  border-radius: 15px;
+  flex: 1;
+  min-width: 300px;
+  border: 2px solid rgba(0, 173, 181, 0.6); /* Teal border */
+  transition: all 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+  background: rgba(0, 173, 181, 0.2); /* Subtle hover effect */
+  transform: translateY(-5px);
+}
+
+.timeline-item h3 {
+  color: #007bff; /* Blue heading */
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.timeline-item p {
+  color: #eeeeee; /* Light gray text */
+  margin-bottom: 10px;
+}

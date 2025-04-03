@@ -1,0 +1,49 @@
+/* Prizes Section Styles */
+#prizes {
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.glow-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+}
+
+.prizes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.prize-tier {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.prize-tier:hover {
+  transform: translateY(-5px);
+}
+
+.prize-tier h3 {
+  font-size: 1.8rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.prize-tier p {
+  font-size: 1.5rem;
+  color: #ffffff;
+}

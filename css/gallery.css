@@ -1,0 +1,20 @@
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  height: 250px;
+  background: rgba(34, 40, 49, 0.9); /* Darker shade for contrast */
+  border-radius: 10px;
+  border: 2px solid rgba(0, 173, 181, 0.6); /* Teal border */
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  background: rgba(0, 173, 181, 0.2); /* Teal hover effect */
+  transform: scale(1.05);
+}

@@ -1,0 +1,31 @@
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px; /* Added padding for better spacing */
+}
+
+.faq-item {
+  background: rgba(34, 40, 49, 0.9); /* Dark background for contrast */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 173, 181, 0.6); /* Teal border */
+  transition: background 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+  background: rgba(0, 173, 181, 0.15); /* Teal hover effect */
+}
+
+.faq-item h3 {
+  color: #00adb5; /* Teal heading for consistency */
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.faq-item p {
+  color: #eeeeee; /* Light text for readability */
+  font-size: 1rem;
+  line-height: 1.5;
+}
