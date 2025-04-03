@@ -219,6 +219,7 @@
             <option value="Techanical_quiz">Techanical Quiz</option>
             <option value="digital_adventure">Digital Adventure</option>
             <option value="paper_presentation">Paper Presentation</option>
+            <option value="poster_presentation">Poster Presentation</option>
             <option value="treasure_hunt">Treasure Hunt</option>
             <option value="web/app_dev">Web / App Development</option>
             <option value="mini_project">Mini Project</option>
@@ -235,15 +236,16 @@
           />
         </div>
         <div class="image-screenshort">
-          <img src="./QRcode.jpg" alt="" />
+          <img src="./QRcode.jpg" alt="Payment Screenshot" />
         </div>
         <div class="form-group">
-          <p style="color: rgb(255, 0, 0)">Upload Payment screenshot</p>
+          <p style="color: rgb(255, 0, 0)">Payment screenshot</p>
           <input
             type="file"
             id="payment_screenshot"
             accept="image/*"
             required
+            onchange="validateFileSize(this)"
           />
         </div>
       </div>
@@ -262,6 +264,17 @@
 
       const databases = new Appwrite.Databases(client);
       const storage = new Appwrite.Storage(client);
+
+      // Size validation for file
+      function validateFileSize(input) {
+        const file = input.files[0];
+        const maxSize = 1 * 1024 * 1024; // 1 MB in bytes
+
+        if (file.size > maxSize) {
+          alert("File size must be less than 1 MB.");
+          input.value = ""; // Clear the input
+        }
+      }
 
       async function submitForm() {
         const team_name = document.getElementById("team_name").value.trim();
@@ -385,6 +398,11 @@
 
           document.getElementById("message").innerText =
             "Registration Successful!";
+
+          // Refresh the page after successful submission
+          setTimeout(() => {
+            window.location.reload();
+          }, 2000); // Wait for 2 seconds before refreshing the page
         } catch (error) {
           document.getElementById("message").innerText =
             "Error: " + error.message;
