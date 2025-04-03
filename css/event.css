@@ -24,7 +24,7 @@
 
 /* Event Cards */
 .event-card {
-  background: white;
+  background-color: #fff;
   padding: 20px;
   border-radius: 12px;
   transition: 0.3s ease-in-out;

@@ -1,18 +1,10 @@
 /* Updated Color Palette for Website */
-:root {
-  --primary-color: #16213e;
-  --secondary-color: #1a1a2e;
-  --accent-color: #ffcc00;
-  --text-light: #ffffff;
-  --text-dark: #2c3e50;
-  --hover-color: #ff6b6b;
-}
 
 .contact-info {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  color: var(--text-light);
+  color: #ffffff;
 }
 
 .contact-info p {
@@ -27,7 +19,7 @@
 footer {
   text-align: center;
   padding: 30px;
-  background: var(--secondary-color);
+  background: #1a1a2e;
   margin-top: 50px;
 }
 
@@ -39,13 +31,13 @@ footer {
 }
 
 .social-links a {
-  color: var(--text-light);
+  color: #ffffff;
   font-size: 1.5rem;
   transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  color: var(--hover-color);
+  color: #ff6b6b;
 }
 
 /* Responsive Styles */
@@ -60,7 +52,7 @@ footer {
     right: -100%;
     width: 70%;
     height: 100vh;
-    background: var(--secondary-color);
+    background: #1a1a2e;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -102,11 +94,11 @@ footer {
 }
 
 .event-card {
-  background: var(--secondary-color);
+  background: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: var(--text-light);
+  color: #1a1a2e;
   transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -149,22 +141,22 @@ footer {
 }
 
 .register-btn {
-  background: var(--accent-color);
-  color: var(--text-dark);
-  border: 2px solid var(--accent-color);
+  background: #ffcc00;
+  color: #2c3e50;
+  border: 2px solid #ffcc00;
 }
 
 .register-btn:hover {
   background: rgba(255, 204, 0, 0.2);
-  color: var(--text-light);
+  color: #ffffff;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
 }
 
 .rules-btn {
   background: transparent;
-  color: var(--text-light);
-  border: 2px solid var(--text-light);
+  color: #1a1a2e;
+  border: 2px solid #1a1a2e;
 }
 
 .rules-btn:hover {
@@ -175,9 +167,9 @@ footer {
 
 /* Contact Section Styles */
 #contact {
-  background: var(--primary-color);
+  background: #16213e;
   padding: 60px 0;
-  color: var(--text-light);
+  color: #ffffff;
 }
 
 .coordinators-container {
@@ -194,15 +186,15 @@ footer {
 }
 
 .coordinators-section h3 {
-  color: var(--accent-color);
+  color: #ffcc00;
   margin-bottom: 20px;
   font-size: 1.5rem;
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 2px solid #ffcc00;
   padding-bottom: 8px;
 }
 
 .contact-person {
-  background: var(--secondary-color);
+  background: #1a1a2e;
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -219,23 +211,23 @@ footer {
 
 .contact-person .name {
   font-weight: 600;
-  color: var(--text-light);
+  color: #ffffff;
   margin-bottom: 10px;
   font-size: 1.1rem;
 }
 
 .general-contact {
-  background: var(--secondary-color);
+  background: #1a1a2e;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 0 auto;
-  color: var(--text-light);
+  color: #ffffff;
 }
 
 .general-contact h3 {
-  color: var(--accent-color);
+  color: #ffcc00;
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
