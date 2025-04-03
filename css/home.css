@@ -25,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(57, 79, 138, 0.8);
+  background: rgba(49, 82, 174, 0.8);
   border-radius: 50px;
   box-shadow: 0 5px 15px rgba(57, 79, 138, 0.3);
   z-index: 1000;

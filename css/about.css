@@ -6,6 +6,15 @@
   animation: glow 1.5s infinite alternate;
 }
 
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4vh;
+  flex-direction: column;
+}
+
 @keyframes glow {
   from {
     text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 15px #00c3ff;
@@ -18,7 +27,7 @@
 /* Highlighted text */
 .highlight {
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
   animation: flicker 1.5s infinite alternate;
 }
 
