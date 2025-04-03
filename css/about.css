@@ -1,12 +1,87 @@
-/* About Section */
-.about-content {
-  max-width: 800px;
-  margin: 0 auto;
+.glow-text {
+  font-size: 3rem;
   text-align: center;
+  color: #fff;
+  text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 15px #00c3ff;
+  animation: glow 1.5s infinite alternate;
 }
 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 15px #00c3ff;
+  }
+  to {
+    text-shadow: 0 0 10px #00c3ff, 0 0 20px #00c3ff, 0 0 30px #00c3ff;
+  }
+}
+
+/* Highlighted text */
+.highlight {
+  font-weight: bold;
+  color: #fff;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Red ETE */
+.ete {
+  font-size: x-large;
+  font-weight: bolder;
+  color: red;
+}
+
+/* Event List Styling */
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 1.2rem;
+  justify-content: center;
+  margin: 10px 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+.event-list span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.event-list span:hover {
+  transform: scale(1.1);
+  background: #ff0080;
+  color: white;
+}
+
+/* Fade-in effect */
 .about-content p {
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

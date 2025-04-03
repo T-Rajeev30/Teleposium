@@ -1,7 +1,7 @@
 var t1 = gsap.timeline({
   repeat: 0,
   yoyo: true,
-  duration: 2,
+  duration: 1.5,
   ease: "power2.inOut",
 });
 
