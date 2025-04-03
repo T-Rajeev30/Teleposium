@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = ["home", "about", "contact"]; // Define the order here
+  const sections = ["landing"]; // Define the order here
 
   function loadSection(index) {
     if (index >= sections.length) return; // Stop when all sections are loaded

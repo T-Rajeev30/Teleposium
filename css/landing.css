@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300;400;600;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#top {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 50vh;
+  background-color: #394f8a;
+  z-index: 10;
+  overflow: hidden;
+}
+/* Common H1 Styling */
+#main h1 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 13vw;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* TOP SECTION */
+
+#top-h1 {
+  font-size: 13vw;
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  bottom: 50%;
+}
+
+/* BOTTOM SECTION */
+#bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: #394f8a;
+  overflow: hidden;
+}
+
+#bottom-h1 {
+  top: -5% !important ;
+}

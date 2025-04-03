@@ -9,18 +9,8 @@
 body {
   font-family: "Orbitron", sans-serif;
   color: white;
-  background-color: black;
   overflow-x: hidden;
   line-height: 1.6;
-}
-
-#vanta-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 /* Navbar Styles */
@@ -35,9 +25,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 0, 0, 0.8);
+  background: rgba(57, 79, 138, 0.8);
   border-radius: 50px;
-  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(57, 79, 138, 0.3);
   z-index: 1000;
   transition: all 0.3s ease;
 }
@@ -50,7 +40,7 @@ body {
 .logo {
   font-size: 1.8rem;
   font-weight: 900;
-  color: white;
+  color: #e1fcfd;
   text-decoration: none;
 }
 
@@ -65,7 +55,7 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: #e1fcfd;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -78,16 +68,16 @@ body {
 }
 
 .register-btn {
-  background: white;
-  color: #ff0000 !important;
+  background: #9cf6fb;
+  color: #394f8a !important;
   padding: 8px 20px;
   border-radius: 50px;
   font-weight: 700 !important;
 }
 
 .register-btn:hover {
-  background: #000 !important;
-  color: white !important;
+  background: black !important;
+  color: #e1fcfd !important;
 }
 
 .menu-toggle {
@@ -105,39 +95,49 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 20px;
 }
 
-#middle h1 {
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 900;
+#middle {
+  padding: 2vw;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.32); */
+}
+
+#middle h2 {
+  font-size: 8vw;
+  font-weight: 1000;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px #4a5fc1, 0 0 20px #4a5fc1;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
 #middle h3,
 h4 {
-  font-size: clamp(2rem, 5vw, 1rem);
-  font-weight: 900;
+  font-size: 2vw;
+  font-weight: 800;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  text-shadow: 0 0 10px #4a5fc1, 0 0 20px #4a5fc1;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: #ccc;
+  font-size: 2vw;
+  margin-bottom: 1rem;
+  color: #e1fcfd;
 }
 
 .cta-button {
   display: inline-block;
-  background: #ff0000;
+  background: #4a5fc1;
   color: white;
   padding: 12px 30px;
   border-radius: 50px;
@@ -145,22 +145,22 @@ h4 {
   font-weight: 700;
   font-size: 1.1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+  box-shadow: 0 5px 15px rgba(74, 95, 193, 0.4);
 }
 
 .cta-button:hover {
-  background: white;
-  color: #ff0000;
+  background: #e1fcfd;
+  color: #394f8a;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.6);
+  box-shadow: 0 8px 20px rgba(74, 95, 193, 0.6);
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    text-shadow: 0 0 10px #4a5fc1, 0 0 20px #4a5fc1;
   }
   to {
-    text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000;
+    text-shadow: 0 0 20px #4a5fc1, 0 0 40px #4a5fc1, 0 0 60px #4a5fc1;
   }
 }
 
@@ -177,7 +177,7 @@ h4 {
   font-size: 2.5rem;
   margin-bottom: 50px;
   text-align: center;
-  color: #ff0000;
+  color: #9cf6fb;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -194,7 +194,7 @@ h4 {
     right: -100%;
     width: 70%;
     height: 100vh;
-    background: rgba(255, 0, 0, 0.95);
+    background: rgba(57, 79, 138, 0.95);
     flex-direction: column;
     justify-content: center;
     align-items: center;
