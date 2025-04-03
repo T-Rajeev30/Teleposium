@@ -6,13 +6,11 @@
   animation: glow 1.5s infinite alternate;
 }
 
-.about-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 4vh;
-  flex-direction: column;
+/* Responsive Text Size */
+@media (max-width: 768px) {
+  .glow-text {
+    font-size: 2rem;
+  }
 }
 
 @keyframes glow {
@@ -24,7 +22,23 @@
   }
 }
 
-/* Highlighted text */
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Make about-content responsive */
+@media (max-width: 768px) {
+  .about-content {
+    gap: 2vh;
+  }
+}
+
 .highlight {
   font-weight: bold;
   color: #ffffff;
@@ -43,14 +57,12 @@
   }
 }
 
-/* Red ETE */
 .ete {
   font-size: x-large;
   font-weight: bolder;
   color: #ffcc00;
 }
 
-/* Event List Styling */
 .event-list {
   display: flex;
   flex-wrap: wrap;
@@ -59,6 +71,18 @@
   justify-content: center;
   margin: 10px 0;
   animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Adjust event-list for smaller screens */
+@media (max-width: 600px) {
+  .event-list {
+    font-size: 1rem;
+    gap: 5px;
+  }
+
+  .event-list span {
+    padding: 6px 10px;
+  }
 }
 
 .event-list span {
@@ -82,6 +106,13 @@
   line-height: 1.5;
   opacity: 0;
   animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Adjust paragraph font size on smaller screens */
+@media (max-width: 768px) {
+  .about-content p {
+    font-size: 1rem;
+  }
 }
 
 @keyframes fadeIn {
