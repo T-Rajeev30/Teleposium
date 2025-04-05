@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let section = sections[index];
 
+    console.log(section)
     // Fetch the HTML file
     fetch(`sections/${section}.html`)
       .then((response) => response.text())
